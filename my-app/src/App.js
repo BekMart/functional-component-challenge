@@ -1,11 +1,11 @@
 import css from './App.module.css';
 import Sidebar from './components/Sidebar';
-import StateGreeting from './components/StateGreeting';
+import StateGreetingWithPrevState from './components/StateGreetingWithPrevState';
 
 function App() {
   return (
     <div className="App">
-      <StateGreeting name="Becki" greeting="I'm a stateful class component" />
+      <StateGreetingWithPrevState name="Becki" greeting="I'm a stateful class component" />
     </div>
   );
 }

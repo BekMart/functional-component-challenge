@@ -1,6 +1,6 @@
 import React from "react";
 
-class StateGreeting extends React.Component {
+class StateGreetingWithPrevState extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -11,14 +11,12 @@ class StateGreeting extends React.Component {
 
   handleClick() {
     this.setState({
-        introduction: "Goodbye!",
-        buttonText: "Enter",
+        introduction: this.state.introduction === "Hello!" ? "Goodbye!" : "Hello!",
+        buttonText: this.state.buttonText === "Exit" ? "Enter" : "Exit",
     }, ()=>{
     console.log('new state', this.state.introduction);
     console.log('new state', this.state.buttonText);
     });
-    console.log(this.state.introduction);
-    console.log(this.state.buttonText);
   }
 
   render() {
@@ -31,4 +29,4 @@ class StateGreeting extends React.Component {
   }
 }
 
-export default StateGreeting;
+export default StateGreetingWithPrevState;
