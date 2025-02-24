@@ -1,9 +1,12 @@
-import EventBinding from "./components/EventBinding";
+import "./App.module.css";
+import ConditionalRenderingClass from "./components/ConditionalRenderingClass";
+import ConditionalRenderingFunctional from "./components/ConditionalRenderingFunctional";
 
 function App() {
   return (
-    <div>
-      <EventBinding />
+    <div className="App">
+      <ConditionalRenderingFunctional connected={true} />
+      <ConditionalRenderingClass />
     </div>
   );
 }
