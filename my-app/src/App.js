@@ -1,9 +1,9 @@
 import "./App.module.css";
-import MethodsAsPropsParent from "./components/MethodsAsPropsParent";
+import NavBarForms from "./components/NavBarForms";
 
 function App() {
   return <div className="App">
-      <MethodsAsPropsParent />
+      <NavBarForms />
   </div>;
 }
 
