@@ -1,9 +1,9 @@
 import "./App.module.css";
-import NavBarForms from "./components/NavBarForms";
+import Contents from "./components/Contents";
 
 function App() {
   return <div className="App">
-      <NavBarForms />
+      <Contents />
   </div>;
 }
 
