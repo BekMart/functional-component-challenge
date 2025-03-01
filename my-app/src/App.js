@@ -1,9 +1,9 @@
 import "./App.module.css";
-import LifeCyclesCDU from "./components/LifeCyclesCDU"; 
+import LifeCycylesCWU from "./components/LifeCycylesCWU";
 
 function App() {
   return <div className="App">
-      <LifeCyclesCDU />
+      <LifeCycylesCWU  />
   </div>;
 }
 
