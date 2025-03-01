@@ -1,9 +1,9 @@
 import "./App.module.css";
-import LifeCycylesCWU from "./components/LifeCycylesCWU";
+import Contents from "./components/Contents";
 
 function App() {
   return <div className="App">
-      <LifeCycylesCWU  />
+      <Contents />
   </div>;
 }
 
