@@ -1,9 +1,9 @@
 import "./App.module.css";
-import Contents from "./components/Contents";
+import LifeCyclesCDM from "./components/LifeCyclesCDM";
 
 function App() {
   return <div className="App">
-      <Contents />
+      <LifeCyclesCDM />
   </div>;
 }
 
