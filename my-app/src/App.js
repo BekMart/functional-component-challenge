@@ -1,9 +1,9 @@
 import "./App.module.css";
-import Contents from "./components/Contents";
+import ControlledForm from "./components/ControlledForm";
 
 function App() {
   return <div className="App">
-      <Contents />
+      <ControlledForm />
   </div>;
 }
 
