@@ -1,10 +1,10 @@
 import "./App.module.css";
-import Contents from "./components/Contents";
+import HooksCounter from "./components/HooksCounter";
 
 
 function App() {
   return <div className="App">
-      <Contents />
+      <HooksCounter />
   </div>;
 }
 
