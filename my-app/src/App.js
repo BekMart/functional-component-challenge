@@ -1,9 +1,9 @@
 import "./App.module.css";
-import UseEffectCounterContainer from "./components/UseEffectCounterContainer";
+import ContentHooks from "./components/ContentHooks.js";
 
 function App() {
   return <div className="App">
-      <UseEffectCounterContainer />
+      <ContentHooks />
   </div>;
 }
 
