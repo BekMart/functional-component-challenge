@@ -9,12 +9,15 @@ export class HTTPRequests extends Component {
       posts: [],
     };
   }
-  // When app runs - use axios to fetch data from jsonplaceholder
+  // Make sure that the response.data is put into an array even if a single object
   componentDidMount() {
-    axios.get("https://jsonplaceholder.typicode.com/posts").then((response) => {
+    axios.get("https://jsonplaceholder.typicode.com/posts/1")
+    .then((response) => {
       console.log(response);
       this.setState({
-        posts: response.data,
+        posts: Array.isArray(response.data)
+        ? response.data
+        : [response.data]
       });
     });
   }
