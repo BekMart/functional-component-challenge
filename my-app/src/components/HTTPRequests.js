@@ -7,11 +7,12 @@ export class HTTPRequests extends Component {
 
     this.state = {
       posts: [],
+      error: null
     };
   }
-  // Make sure that the response.data is put into an array even if a single object
+  // Add catch method to display any errors which occur
   componentDidMount() {
-    axios.get("https://jsonplaceholder.typicode.com/posts/1")
+    axios.get("https://jsonplaceholder.typicode.com/posts/999")
     .then((response) => {
       console.log(response);
       this.setState({
@@ -19,8 +20,14 @@ export class HTTPRequests extends Component {
         ? response.data
         : [response.data]
       });
-    });
+    })
+    .catch(error => {
+      this.setState({
+        error: error.message
+      })
+    })
   }
+
   render() {
     const posts = this.state.posts;
     return (
@@ -36,7 +43,9 @@ export class HTTPRequests extends Component {
             </div>
           ))
         ) : (
-          <h4>Loading posts...</h4>
+            this.state.error
+            ? <p>{this.state.error}</p>
+            : <h4>Loading posts...</h4>
         )}
       </div>
     );
