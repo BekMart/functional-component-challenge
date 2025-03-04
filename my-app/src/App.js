@@ -1,9 +1,9 @@
 import "./App.module.css";
-import HTTPHooks from "./components/HTTPHooks";
+import ContentAPI from "./components/ContentAPI";
 
 function App() {
   return <div className="App">
-      <HTTPHooks />
+      <ContentAPI />
   </div>;
 }
 
