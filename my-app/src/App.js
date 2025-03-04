@@ -1,9 +1,9 @@
 import "./App.module.css";
-import ContentHooks from "./components/ContentHooks.js";
+import HTTPRequests from "./components/HTTPRequests.js";
 
 function App() {
   return <div className="App">
-      <ContentHooks />
+      <HTTPRequests />
   </div>;
 }
 
